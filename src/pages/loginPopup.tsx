@@ -4,7 +4,7 @@ import { styled } from "@mui/material/styles";
 const LoginPopUp = () => {
 	const handleSignin = () => {
 		const data = { message: 'Hello from the new window!', signIn: true };
-		window.opener.postMessage(data, 'http://localhost:3003/loginPopup');
+		window.opener.postMessage(data, 'https://signin-pop-up.vercel.app/loginPopup');
 		window.close();
 	}
 
